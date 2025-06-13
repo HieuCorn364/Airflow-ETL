@@ -1,0 +1,14 @@
+{"timestamp":"2025-06-07T05:10:14.287128","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-07T05:10:14.287573","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/first_test_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-07T05:10:14.317503Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-07T05:10:14.317965Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-07T05:10:14.318491Z","level":"info","event":"Current task name:sleep","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-07T05:10:14.318682Z","level":"info","event":"Dag name:my_first_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-07T05:10:14.300979","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-07T05:10:14.302038","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'sleep 5']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-07T05:10:14.314647","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-07T05:10:19.318773","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-06-07T05:10:19.319766","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019748cb-ddd2-7af5-9a1c-f8dbfeab8ee3'), task_id='sleep', dag_id='my_first_dag', run_id='manual__2025-06-07T05:10:09.590011+00:00', try_number=1, map_index=-1, hostname='cf03019b4c93', context_carrier={}, task=<Task(BashOperator): sleep>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 6, 7, 5, 10, 13, 886534, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-06-07T05:10:19.351786Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-07T05:10:19.352117Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-07T05:10:19.352299Z","level":"info","event":"Task operator:<Task(BashOperator): sleep>","chan":"stdout","logger":"task"}
