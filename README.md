@@ -68,3 +68,5 @@ After running the DAG successfully in Airflow, all tasks were completed as expec
 -  **load** → Loaded into PostgreSQL
 -  **send_email** → Email notification sent successfully
 
+![Email Received](https://github.com/HieuCorn364/Airflow-ETL/blob/main/images/Mail.png)
+
